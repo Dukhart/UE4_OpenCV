@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UE4_OpenCVEditorTarget : TargetRules
+public class MetaAvatarEditorTarget : TargetRules
 {
-	public UE4_OpenCVEditorTarget( TargetInfo Target) : base(Target)
+	public MetaAvatarEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "UE4_OpenCV" } );
+		ExtraModuleNames.AddRange( new string[] { "MetaAvatar" } );
 	}
 }

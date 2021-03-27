@@ -1,7 +1,8 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
 using System.IO;
 using UnrealBuildTool;
 
-public class UE4_OpenCV : ModuleRules
+public class MetaAvatar : ModuleRules
 {
 	string OPENCV_VERSION = "451";
 	private string ThirdPartyPath
@@ -47,7 +48,7 @@ public class UE4_OpenCV : ModuleRules
         PublicDefinitions.Add(string.Format("WITH_OPENCV_BINDING={0}", isLibrarySupported ? 1 : 0));
         return isLibrarySupported;
     }
-    public UE4_OpenCV(ReadOnlyTargetRules Target) : base(Target)
+    public MetaAvatar(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
